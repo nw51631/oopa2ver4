@@ -10,6 +10,15 @@ namespace CMP1903M_A01_2223
     {
         public static void CardSort(int[] array)
         {
+            bool runAgain = true;
+            while (runAgain)
+            {
+                Console.WriteLine("Would you like to run the program again? (y/n)");
+                string input = Console.ReadLine();
+                runAgain = (input.ToLower() == "y" || input.ToLower() == "yes");
+            }
+        }
+        {
             int num = array.Length;
             for (int var1 = 0; var1 < num - 1; var1++)
             {
