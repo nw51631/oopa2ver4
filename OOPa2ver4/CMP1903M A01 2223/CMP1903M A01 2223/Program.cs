@@ -15,11 +15,11 @@ namespace CMP1903M_A01_2223
             {
                 for (int var2 = var1 + 1; var2 < num; var2++)
                 {
-                    if (array[var1] > array[var2])
+                    if (array[i].Value > array[j].Value)
                     {
-                        int temp = array[var1];
-                        array[var1] = array[var2];
-                        array[var2] = temp;
+                        Card temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
                     }
                 }
             }
