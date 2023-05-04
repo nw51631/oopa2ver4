@@ -8,14 +8,13 @@ namespace CMP1903M_A01_2223
 {
     public class Card
     {
-        
         public int Value { get; set; }
-        public int Suit { get; set; }
-    }
-    public class Suit
-    
-    {
-        public string Name { get; set; }
-        public int SortOrder { get; set; }
+        public string Suit { get; set; }
+        
+        public Card(int value, string suit)
+        {
+            Value = value;
+            Suit = suit;
+        }
     }
 }
